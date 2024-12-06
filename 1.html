@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy this</title>
+</head>
+<body>
+    Plz ye sentance copy mat karna
+</body>
+<script>
+    document.addEventListener("copy", (event) => {
+        const selectdata = window.getSelection().toString();
+        event.clipboardData.setData(
+            "text/plain",
+            "bola tha na copy ni hoga"
+        );
+        event.preventDefault();
+    })
+</script>
+</html>
